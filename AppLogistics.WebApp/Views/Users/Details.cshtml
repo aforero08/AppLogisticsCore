@@ -1,0 +1,61 @@
+﻿@model AppLogistics.WebApp.Models.ApplicationUserViewModel.ApplicationUserDetailsViewModel
+
+@{
+    ViewData["Title"] = "Detalles de Usuario";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Usuario</h4>
+    <hr />
+
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailConfirmed)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmailConfirmed)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastLogin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastLogin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentRol)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CurrentRol)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    <a asp-action="Index">Back to List</a>
+</div>
